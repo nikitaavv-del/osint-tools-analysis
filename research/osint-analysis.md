@@ -1,92 +1,80 @@
-# 🕵️‍♂️ OSINT Tools Analysis
+## 🔍 Sherlock
 
-> *"Intelligence is not about data — it's about connecting the dots."*
+### (A) Working
 
----
+1. Install required packages:
+sudo apt install git python3 python3-pip python3-venv -y
 
-## 🧠 Overview
+2. Clone the Sherlock repository:
+git clone https://github.com/sherlock-project/sherlock.git
+cd sherlock
 
-This repository presents a comparative research analysis of popular Open Source Intelligence (OSINT) tools used for digital investigations.
+3. Create a Virtual Environment:
+python3 -m venv venv
+source venv/bin/activate
 
-The focus is on understanding how different tools operate, their scope of findings, and their relevance in real-world cybersecurity and intelligence scenarios.
-
----
-
-## 🎯 Objective
-
-* Analyze widely used OSINT tools
-* Compare their capabilities and limitations
-* Identify best use-cases for each tool
-
----
-
-## 🔍 Tools Covered
-
-* **Sherlock** → Username-based social media footprinting
-* **TheBigBrother** → Advanced intelligence aggregation tool
+4. Install Dependencies:
+pip install --upgrade pip
+pip install .
 
 ---
 
-## 🔬 Methodology
 
-* Tool installation and execution
-* Feature-based comparison
-* Real-world applicability evaluation
+## (B) Scope of Findings
+--> Primarily social media footprinting
+--> Identifies usernames across platforms like Twitter, Instagram, GitHub, TikTok
+--> Supports anonymity through Tor/Proxy
 
----
+Why Privacy Matters:
 
-## 📊 Key Insights
-
-* Lightweight tools like Sherlock are highly efficient for quick investigations
-* Advanced tools like TheBigBrother provide deeper intelligence but require more setup
-* Privacy measures (Tor/Proxy) are critical in OSINT operations
+--> Prevents IP tracking
+--> Avoids detection/blocking from platforms
 
 ---
 
-## 🛠 Tech Stack
 
-* Linux (Kali/Ubuntu)
-* Python
-* Docker
-
----
-
-## 📁 Project Structure
-
-```
-.
-├── README.md
-├── research-paper/
-│   └── osint-analysis.md
-├── assets/
-└── references.md
-```
+## (C) Relevance
+1. Addresses a common OSINT need: username discovery
+2. Simple and lightweight
+3. Strong community support
 
 ---
 
-## 🚀 Use Cases
+## 🧠 TheBigBrother
 
-* Cybersecurity investigations
-* Digital footprint analysis
-* Ethical hacking reconnaissance
-* Threat intelligence gathering
+### (A) Working
+
+1. Clone the BigBrother Repository:
+apt update
+apt install git -y
+git clone https://github.com/chadi0x/TheBigBrother.git
+
+2. Install Official Docker Repository
+Run these commands one by one:
+sudo apt update
+sudo apt install ca-certificates curl gnupg -y
+
+sudo install -m 0755 -d /etc/apt/keyrings
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+Install Docker:
+sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
+
+3. Check installation:
+
+docker compose version
+Run the tool (inside TheBigBrother folder):
+docker compose up --build
 
 ---
 
-## 👩‍💻 Author
 
-**Nikita Verma**
-
----
-
-## ⭐ Final Verdict
-
-* Use **Sherlock** → for quick social media username discovery
-* Use **TheBigBrother** → for deep intelligence gathering
+## (B) Scope of Findings
+--> Broad intelligence gathering across multiple domains
+--> Integrates social media, infrastructure, and digital identity intelligence
+--> Features include: Crypto wallet analysis, SSL intelligence, Sky Radar (real-time aircraft tracking), Digital footprint analysis (emails, phone numbers, breach correlation), Provides a GUI (Graphical User Interface)
 
 ---
-
-## ⚠️ Disclaimer
-
-This project is for educational and ethical use only.
 
