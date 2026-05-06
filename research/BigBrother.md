@@ -32,6 +32,8 @@ docker compose up --build
 
 ---
 
+![image alt](https://github.com/nikitaavv-del/osint-tools-analysis/blob/63660f2a72acb592617b802e15c7ca38009584b4/BigBrother_Tests.png)
+
 
 ## (B) Scope of Findings
 --> Broad intelligence gathering across multiple domains
