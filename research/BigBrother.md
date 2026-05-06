@@ -1,6 +1,9 @@
 
 ## 🧠 TheBigBrother
 
+
+![image alt](https://github.com/nikitaavv-del/osint-tools-analysis/blob/b990ca8854edc9800d84dcd8aa01467bd351157d/BigBrother_Interface.png)
+
 ### (A) Working
 
 1. Clone the BigBrother Repository:
