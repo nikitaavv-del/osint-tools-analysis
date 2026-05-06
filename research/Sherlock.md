@@ -21,6 +21,8 @@ pip install .
 
 ![image alt](https://github.com/nikitaavv-del/osint-tools-analysis/blob/bf42b724ad50fcc0a23a62eb400dbf3eee681001/sherlock_cli.png)
 
+![image alt](https://github.com/nikitaavv-del/osint-tools-analysis/blob/09bc8f7c61121dc13c586fedc6d3f8245d787e13/sherlock_test.png)
+
 
 ## (B) Scope of Findings
 --> Primarily social media footprinting
